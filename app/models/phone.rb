@@ -12,8 +12,9 @@ class Phone < ActiveRecord::Base
   belongs_to :organization
 
   validates :number,
-            presence: { message: I18n.t('errors.messages.blank_for_phone') },
-            phone: { unless: ->(phone) { phone.number == '711' } }
+            presence: { message: I18n.t('errors.messages.blank_for_phone') }
+#            presence: { message: I18n.t('errors.messages.blank_for_phone') },
+#            phone: { unless: ->(phone) { phone.number == '711' } }
 
   validates :number_type,
             presence: { message: I18n.t('errors.messages.blank_for_phone') }
