@@ -61,7 +61,7 @@ class Location < ActiveRecord::Base
 
   validates :email, email: true, allow_blank: true
 
-  after_validation :geocode, if: :needs_geocoding?
+  # after_validation :geocode, if: :needs_geocoding?
 
   geocoded_by :full_physical_address
 
