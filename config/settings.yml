@@ -215,7 +215,7 @@ valid_service_areas:
 # and for the Holiday Schedule `start_date` and `end_date` fields.
 # The default format is the US-style month/day/year. To use the day/month
 # style, change the value below to '%d/%m/'.
-date_format: '%m/%d/'
+date_format: '%d/%m/'
 
 ############################
 #
@@ -252,7 +252,7 @@ confirmation_email: ohanapi@codeforamerica.org
 # Make sure to change the coordinates to match your preferred search area.
 #
 # This setting is used in 'app/models/concerns/search.rb'.
-bounds: [[25.7084, -124.085], [48.9084, -67.085]]
+bounds: [[39.906410, -4.623211], [41.173322, -3.027446]]
 
 ###########################################
 #
@@ -264,7 +264,7 @@ test:
   - 'Cash'
   - 'Check'
 
-  bounds: [[37.1074, -122.521], [37.7084, -122.085]]
+  bounds: [[40.1074, -3.921], [40.7084, -3.585]]
 
   confirmation_email: registration@ohanapi.org
 
@@ -285,4 +285,4 @@ test:
   - 'Atherton'
   - 'Belmont'
 
-  date_format: '%m/%d/'
+  date_format: '%d/%m/'
